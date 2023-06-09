@@ -1,5 +1,5 @@
-# Xeon-Development-Kit
-XDK
+# Xeon Development Kit
+Xeon development kit is toolkit for plugin development in Xeon similiar to forge but you are more like adding stuff rather than modifying current code
 # Usage
 Using XDK (v1.0) is recommended to be used with wrappers to object instead of calling directly implementations
 # How i can get an example wrapper?
