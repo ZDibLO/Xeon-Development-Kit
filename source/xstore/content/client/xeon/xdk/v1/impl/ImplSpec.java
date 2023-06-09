@@ -13,7 +13,7 @@ public class ImplSpec {
 		this.name = name;
 		this.type = type;
 		this.arg = null;
-		this.hash = name.hashCode() * type.hashCode();
+		this.hash = name.hashCode() * type.hashCode() * (is_static ? 1 : 0);
 	}
 	
 	public ImplSpec(boolean is_static, String name, IMPL_TYPE type, String arg[]) {
@@ -21,7 +21,7 @@ public class ImplSpec {
 		this.name = name;
 		this.type = type;
 		this.arg = arg;
-		this.hash = name.hashCode() * type.hashCode();// we dont account in our hashcode arguments
+		this.hash = name.hashCode() * type.hashCode() * (is_static ? 1 : 0);// we dont account in our hashcode arguments
 	}
 	
 	public boolean is_static() {
