@@ -9,5 +9,5 @@ import java.lang.annotation.Target;
 @Retention(CLASS)
 @Target(FIELD)
 public @interface Constant {
-
+//Constant doesn't really mean that passed value can't be set, it actually means that can't be set but via XDK, it can change on client side
 }

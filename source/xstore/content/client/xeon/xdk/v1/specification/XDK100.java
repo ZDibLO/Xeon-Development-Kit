@@ -39,11 +39,15 @@ public class XDK100 {
 	//Some entity methods
 	public static ImplSpec elb_jump = new ImplSpec(false, "elb_jump()V", METHOD);
 	//Xeon 
-	@Constant public static ImplSpec xeon = new ImplSpec<>(true, "x_gtx", FIELD);
+	@Constant public static ImplSpec xeon = new ImplSpec(true, "x_gtx", FIELD);
 	//Xeon modules
 	@Constant public static ImplSpec xn_modulemanager = new ImplSpec(false, "x_mdmng", FIELD);
 	@Constant public static ImplSpec modmanager_getlist = new ImplSpec<ListObject, Object>(false, "mmg_list", FIELD);
 	//Xeon LoggingService
-	@Constant public static ImplSpec xn_log = new ImplSpec<>(false, "x_log", FIELD);
+	@Constant public static ImplSpec xn_log = new ImplSpec(false, "x_log", FIELD);
 	public static ImplSpec log_debug = new ImplSpec(false, "log_debug()V", METHOD, "String" /*msg*/);
+	//World
+	@Constant public static ImplSpec theWorld = new ImplSpec(false, "mc_getworld", FIELD);
+	@Constant public static ImplSpec loaded_entity_list = new ImplSpec(false, "wrld_el", FIELD);
+	
 }
