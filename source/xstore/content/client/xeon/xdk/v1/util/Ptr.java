@@ -1,7 +1,5 @@
 package xstore.content.client.xeon.xdk.v1.util;
 
-import java.util.Iterator;
-
 public class Ptr<V> {
 	public V value;
 	public Ptr(V value) {

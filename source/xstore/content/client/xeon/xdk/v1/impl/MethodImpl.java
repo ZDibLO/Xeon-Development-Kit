@@ -1,5 +1,5 @@
 package xstore.content.client.xeon.xdk.v1.impl;
 
-public interface MethodImpl {
-	public Object invoke(Object parent, Object...arguments);
+public interface MethodImpl<R, P> {
+	public R invoke(P parent, Object...arguments);
 }

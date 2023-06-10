@@ -1,6 +1,6 @@
 package xstore.content.client.xeon.xdk.v1.impl;
 
-public class ImplSpec {
+public class ImplSpec<R, P> {
 	private final boolean is_static;
 	private final String name;
 	private final IMPL_TYPE type;
