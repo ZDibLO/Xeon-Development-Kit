@@ -15,6 +15,10 @@ public abstract class ModuleAddon extends HookDispatchable implements Addon{
 		this.category = category;
 	}
 	
+	@Override
+	public final AddonKind kind() {
+		return AddonKind.MODULE;
+	}
 	
 	public void onEnable() {}
 	public void onDisable() {}
