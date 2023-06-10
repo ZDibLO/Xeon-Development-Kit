@@ -16,7 +16,7 @@ public class ImplSpec<R, P> {
 		this.hash = name.hashCode() * type.hashCode() * (is_static ? 1 : 0);
 	}
 	
-	public ImplSpec(boolean is_static, String name, IMPL_TYPE type, String arg[]) {
+	public ImplSpec(boolean is_static, String name, IMPL_TYPE type, String...arg) {
 		this.is_static = is_static;
 		this.name = name;
 		this.type = type;
