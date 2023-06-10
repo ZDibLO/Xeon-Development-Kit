@@ -11,5 +11,6 @@ import xstore.content.client.xeon.xdk.v1.shared.XDKPluginVersion;
 @Retention(CLASS)
 @Target(TYPE)
 public @interface XDKPlugin {
-	public XDKPluginVersion version();
+	public XDKPluginVersion version() default XDKPluginVersion.XDK_100;
+	public String name();
 }
